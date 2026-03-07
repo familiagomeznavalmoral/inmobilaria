@@ -58,7 +58,7 @@ nav ul li a {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
-                url('/imagenes/photo-1670589953882-b94c9cb380f5.avif');
+                url('imagenes/photo-1670589953882-b94c9cb380f5.avif');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Efecto Parallax */
