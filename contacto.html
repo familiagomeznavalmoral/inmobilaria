@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto | Toni Gomez Luxury Homes</title>
+    <!-- Reutilizamos tu CSS principal y añadimos uno específico si quieres -->
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <style>
+        /* Estilos específicos para esta página */
+        .contact-page {
+            padding-top: 150px; /* Espacio para el menú fijo */
+            background-color: #fff;
+        }
+        .map-container {
+            width: 100%;
+            height: 450px;
+            margin-top: 60px;
+            filter: grayscale(100%); /* Efecto elegante en blanco y negro */
+            transition: 0.5s;
+        }
+        .map-container:hover {
+            filter: grayscale(0%);
+        }
+    </style>
+</head>
+<body>
+
+    <header id="navbar" class="scrolled"> <!-- Forzamos el estilo blanco del menú -->
+        <div class="logo"><a href="index.html" style="text-decoration:none; color:black;">TONI GOMEZ | LUXURY HOMES</a></div>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="#">VILLAS</a></li>
+                <li><a href="contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contact-page">
+        <section class="contact-section">
+            <div class="contact-container">
+                <div class="contact-info">
+                    <h2>ESTAMOS A SU <br><span>ENTERA DISPOSICIÓN</span></h2>
+                    <p>Si desea información sobre una propiedad específica o quiere que diseñemos la villa de sus sueños, contáctenos.</p>
+                    
+                    <div class="info-item">
+                        <strong>DIRECCIÓN CENTRAL</strong>
+                        <p>Avenida del Mediterráneo, 12<br>03730 Jávea, Alicante (España)</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>CORREO ELECTRÓNICO</strong>
+                        <p>tonigomez@luxuryhomes.com</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>TELÉFONO PRIVADO</strong>
+                        <p>+34 600 000 000</p>
+                    </div>
+                    <div class="info-item">
+                        <strong>HORARIO</strong>
+                        <p>Lunes - Viernes: 09:00 - 19:00</p>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form action="#">
+                        <input type="text" placeholder="NOMBRE Y APELLIDOS" required>
+                        <input type="email" placeholder="CORREO ELECTRÓNICO" required>
+                        <input type="tel" placeholder="TELÉFONO">
+                        <textarea placeholder="¿EN QUÉ PROYECTO ESTÁ INTERESADO?" rows="6"></textarea>
+                        <button type="submit" class="btn-dark">ENVIAR CONSULTA</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+
+        <!-- Mapa de Google Maps (Ubicación ficticia en Jávea como Miralbo) -->
+        <div class="map-container">
+            <iframe src="https://www.google.com" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+    </main>
+
+    <footer style="padding: 50px; text-align: center; font-size: 12px; letter-spacing: 2px; color: #888;">
+        &copy; 2026 TONI GOMEZ | LUXURY HOMES. TODOS LOS DERECHOS RESERVADOS.
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
