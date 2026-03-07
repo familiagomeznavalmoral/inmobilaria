@@ -102,6 +102,14 @@ nav ul li a {
     margin: 0 auto;
 }
 
+@media (max-width:768px){
+
+.contact-container{
+    grid-template-columns:1fr;
+}
+
+}
+
 .contact-info h2 {
     font-size: 2.5rem;
     font-weight: 300;
@@ -152,6 +160,7 @@ footer {
     .hero-content h1 { font-size: 2rem; letter-spacing: 5px; }
 }
 
+
 /* --- PÁGINA DE VILLAS --- */
 .villas-page {
     padding-top: 150px;
@@ -184,6 +193,14 @@ footer {
     gap: 40px;
     padding: 0 10%;
     margin-bottom: 100px;
+}
+
+@media (max-width:768px){
+
+.villas-grid{
+    grid-template-columns:1fr;
+}
+
 }
 
 .villa-card {
@@ -282,15 +299,38 @@ footer {
     margin-bottom:60px;
 }
 
-.villa-grid{
+.featured-grid{
     display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    grid-template-columns:repeat(3,1fr);
     gap:40px;
+    max-width:1200px;
+    margin:auto;
 }
 
-.villa-card{
+.featured-card{
     overflow:hidden;
-    transition: transform 0.4s ease;
+    transition:transform 0.4s ease;
+}
+
+.featured-card img{
+    width:100%;
+    height:260px;
+    object-fit:cover;
+}
+
+.featured-card:hover{
+    transform:translateY(-10px);
+}
+
+.featured-card h3{
+    margin-top:15px;
+    font-size:14px;
+    letter-spacing:3px;
+}
+
+.featured-card p{
+    font-size:12px;
+    color:#666;
 }
 
 .villa-card img{
@@ -417,5 +457,13 @@ footer {
     opacity:1;
     transform:translateY(0);
     transition:1s ease;
+
+}
+
+@media (max-width:768px){
+
+.featured-grid{
+    grid-template-columns:1fr;
+}
 
 }
