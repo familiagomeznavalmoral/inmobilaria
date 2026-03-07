@@ -58,7 +58,7 @@ nav ul li a {
 .hero {
     height: 100vh;
     background: linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.2)), 
-                url('imagenes/photo-1670589953882-b94c9cb380f5.avif');
+                url('imagenes/principal.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed; /* Efecto Parallax */
@@ -247,3 +247,20 @@ footer {
     .villas-grid { grid-template-columns: 1fr; padding: 0 5%; }
     .villa-image { height: 350px; }
 }
+
+.map-section {
+    width: 100%;
+    background-color: #fff;
+    padding-top: 50px; /* Separación con la sección anterior */
+}
+
+.map-container {
+    filter: grayscale(100%); /* Lo pone en blanco y negro para que sea más elegante */
+    transition: filter 0.5s ease;
+    line-height: 0; /* Elimina espacios extra abajo */
+}
+
+.map-container:hover {
+    filter: grayscale(0%); /* Recupera el color al pasar el ratón */
+}
+
