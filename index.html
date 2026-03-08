@@ -6,18 +6,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Toni Gomez | Luxury Homes</title>
+<title>Toni Gomez | Luxury Villas en Jávea - Costa Blanca</title>
 
-<meta name="description" content="Villas de lujo en Jávea y Costa Blanca. Arquitectura moderna y propiedades exclusivas.">
-<meta name="keywords" content="villas lujo, inmobiliaria Jávea, luxury homes Costa Blanca">
+<meta name="description" content="Villas de lujo en Jávea y Costa Blanca. Arquitectura moderna, vistas al mar y propiedades exclusivas.">
+<meta name="keywords" content="villas lujo Jávea, inmobiliaria Jávea, luxury villas Costa Blanca, villas modernas Jávea">
 <meta name="author" content="Toni Gomez">
 
-<link rel="icon" href="imagenes/favicon.png">
+<link rel="canonical" href="https://tonigomez.com">
+
+<link rel="icon" type="image/png" sizes="32x32" href="imagenes/favicon.png">
+<link rel="icon" type="image/png" sizes="16x16" href="imagenes/favicon.png">
+
+<!-- Open Graph -->
+
+<meta property="og:title" content="Toni Gomez | Luxury Homes">
+<meta property="og:description" content="Villas exclusivas en Jávea y Costa Blanca. Arquitectura moderna y ubicaciones premium.">
+<meta property="og:image" content="https://tonigomez.com/imagenes/og-image.jpg">
+<meta property="og:type" content="website">
 
 <link rel="stylesheet" href="style.css">
 
+<!-- Google Fonts -->
+
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
 
 </head>
 
@@ -50,11 +64,17 @@
 
 <div class="hero-content">
 
-<h1>ARQUITECTURA DE VANGUARDIA</h1>
+<h1>Villas de Lujo en Jávea – Arquitectura Moderna en Costa Blanca</h1>
 
-<p>Diseño exclusivo en la Costa Blanca</p>
+<p>Propiedades exclusivas con diseño contemporáneo y ubicaciones privilegiadas</p>
 
-<a href="#contacto" class="btn">SOLICITAR INFORMACIÓN</a>
+<div class="hero-buttons">
+
+<a href="villas.html" class="btn">VER VILLAS</a>
+
+<a href="#contacto" class="btn-outline">SOLICITAR INFORMACIÓN</a>
+
+</div>
 
 </div>
 
@@ -72,33 +92,77 @@
 
 <div class="featured-card">
 
-<img src="imagenes/1.jpg" alt="Villa Mediterránea">
+<img src="imagenes/1.jpg" alt="Villa de lujo mediterránea en Jávea con piscina y vistas al mar" loading="lazy">
 
 <h3>Villa Mediterránea</h3>
 
 <p>4 dormitorios · Piscina · Vistas al mar</p>
 
+<p class="villa-price">Jávea · €2.450.000</p>
+
 </div>
 
 
 <div class="featured-card">
 
-<img src="imagenes/2.jpg" alt="Villa Contemporánea">
+<img src="imagenes/2.jpg" alt="Villa contemporánea de lujo en Jávea con arquitectura minimalista" loading="lazy">
 
 <h3>Villa Contemporánea</h3>
 
 <p>Diseño minimalista · 5 dormitorios</p>
 
+<p class="villa-price">Jávea · €3.100.000</p>
+
 </div>
 
 
 <div class="featured-card">
 
-<img src="imagenes/3.jpg" alt="Villa Premium">
+<img src="imagenes/3.jpg" alt="Villa premium moderna en Costa Blanca con jardín privado" loading="lazy">
 
 <h3>Villa Premium</h3>
 
 <p>Arquitectura exclusiva · Jardín privado</p>
+
+<p class="villa-price">Costa Blanca · €4.200.000</p>
+
+</div>
+
+</div>
+
+</section>
+
+
+
+<!-- WHY CHOOSE US -->
+
+<section class="why-us">
+
+<h2>POR QUÉ ELEGIRNOS</h2>
+
+<div class="why-grid">
+
+<div>
+
+<h3>Arquitectura Exclusiva</h3>
+
+<p>Trabajamos con arquitectos especializados en villas modernas y diseño de alto nivel.</p>
+
+</div>
+
+<div>
+
+<h3>Ubicaciones Premium</h3>
+
+<p>Seleccionamos propiedades en las zonas más exclusivas de Jávea y la Costa Blanca.</p>
+
+</div>
+
+<div>
+
+<h3>Asesoramiento Internacional</h3>
+
+<p>Acompañamos a compradores internacionales durante todo el proceso de compra.</p>
 
 </div>
 
@@ -119,8 +183,8 @@
 <p>
 
 Especialistas en villas de lujo en la Costa Blanca.
-Diseñamos y comercializamos propiedades exclusivas
-con arquitectura moderna y ubicaciones privilegiadas en Jávea.
+Diseñamos y comercializamos propiedades exclusivas con arquitectura moderna
+y ubicaciones privilegiadas en Jávea.
 
 </p>
 
@@ -145,7 +209,7 @@ ESTAMOS A SU
 </h2>
 
 <p>
-Escríbanos para recibir asesoramiento personalizado sobre nuestras villas.
+Contacte con nosotros para recibir asesoramiento privado sobre nuestras villas.
 </p>
 
 <div class="info-item">
@@ -169,13 +233,13 @@ Escríbanos para recibir asesoramiento personalizado sobre nuestras villas.
 
 <div class="contact-form">
 
-<form>
+<form action="enviar.php" method="POST">
 
-<input type="text" placeholder="NOMBRE COMPLETO" required>
+<input type="text" name="nombre" placeholder="NOMBRE COMPLETO" required>
 
-<input type="email" placeholder="CORREO ELECTRÓNICO" required>
+<input type="email" name="email" placeholder="CORREO ELECTRÓNICO" required>
 
-<textarea placeholder="MENSAJE" rows="5"></textarea>
+<textarea name="mensaje" placeholder="MENSAJE" rows="5"></textarea>
 
 <button class="btn-dark">ENVIAR CONSULTA</button>
 
@@ -210,13 +274,27 @@ loading="lazy">
 
 
 
+<!-- CTA FINAL -->
+
+<section class="cta">
+
+<h2>Descubra nuestras villas exclusivas</h2>
+
+<p>Solicite información privada sobre propiedades disponibles.</p>
+
+<a href="#contacto" class="btn">CONTACTAR AHORA</a>
+
+</section>
+
+
+
 <!-- FOOTER -->
 
-<footer>
+<footer class="footer">
 
 <p>© 2026 TONI GOMEZ | LUXURY HOMES</p>
 
-<div class="social">
+<div class="socials">
 
 <a href="#">Instagram</a>
 <a href="#">Facebook</a>
@@ -230,12 +308,29 @@ loading="lazy">
 
 <!-- BOTÓN WHATSAPP -->
 
-<a href="https://wa.me/34600000000" class="whatsapp-float">
-
-WhatsApp
-
+<a href="https://wa.me/34600000000?text=Hola%20me%20gustaría%20recibir%20información%20sobre%20sus%20villas%20disponibles" target="_blank" class="whatsapp-float">
+💬 WhatsApp
 </a>
 
+
+
+<!-- DATOS ESTRUCTURADOS SEO -->
+
+<script type="application/ld+json">
+{
+ "@context": "https://schema.org",
+ "@type": "RealEstateAgent",
+ "name": "Toni Gomez Luxury Homes",
+ "address": {
+   "@type": "PostalAddress",
+   "addressLocality": "Jávea",
+   "addressRegion": "Alicante",
+   "addressCountry": "Spain"
+ },
+ "telephone": "+34600000000",
+ "email": "info@tonigomez.com"
+}
+</script>
 
 <script src="script.js"></script>
 
