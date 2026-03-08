@@ -1,78 +1,178 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nuestras Villas | Toni Gomez Luxury Homes</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Nuestras Villas | Toni Gomez Luxury Homes</title>
+
+<meta name="description" content="Colección exclusiva de villas de lujo en Jávea, Altea y Moraira.">
+
+<link rel="stylesheet" href="style.css">
+
 </head>
+
 <body>
 
-    <!-- Menú (Reutilizado pero con fondo blanco para legibilidad) -->
-    <header id="navbar" class="scrolled">
-        <div class="logo">TONI GOMEZ | LUXURY HOMES</div>
-        <nav>
-            <ul>
-                <li><a href="index.html">INICIO</a></li>
-                <li><a href="villas.html">VILLAS</a></li>
-                <li><a href="contacto.html">CONTACTO</a></li>
-            </ul>
-        </nav>
-    </header>
+<header id="navbar" class="scrolled">
 
-    <main class="villas-page">
-        <section class="villas-header">
-            <h1>COLECCIÓN EXCLUSIVA</h1>
-            <p>Villas diseñadas para redefinir el concepto de hogar</p>
-        </section>
+<div class="logo">TONI GOMEZ | LUXURY HOMES</div>
 
-        <!-- Cuadrícula de Villas -->
-        <section class="villas-grid">
-            
-            <!-- Villa 1 -->
-            <div class="villa-card">
-                <div class="villa-image">
-                    <img src="imagenes/1.jpg" alt="Villa Aura">
-                </div>
-                <div class="villa-info">
-                    <h3>VILLA AURA</h3>
-                    <p>Jávea · 5 Dormitorios · 1.200 m²</p>
-                    <a href="#" class="view-more">VER PROYECTO</a>
-                </div>
-            </div>
+<nav>
+<ul>
+<li><a href="index.html">INICIO</a></li>
+<li><a href="villas.html">VILLAS</a></li>
+<li><a href="contacto.html">CONTACTO</a></li>
+</ul>
+</nav>
 
-            <!-- Villa 2 -->
-            <div class="villa-card">
-                <div class="villa-image">
-                    <img src="imagenes/2.jpg" alt="Villa Zenith">
-                </div>
-                <div class="villa-info">
-                    <h3>VILLA ZENITH</h3>
-                    <p>Altea · 4 Dormitorios · 950 m²</p>
-                    <a href="#" class="view-more">VER PROYECTO</a>
-                </div>
-            </div>
+</header>
 
-            <!-- Villa 3 -->
-            <div class="villa-card">
-                <div class="villa-image">
-                    <img src="imagenes/3.jpg" alt="Villa Horizon">
-                </div>
-                <div class="villa-info">
-                    <h3>VILLA HORIZON</h3>
-                    <p>Moraira · 6 Dormitorios · 1.500 m²</p>
-                    <a href="#" class="view-more">VER PROYECTO</a>
-                </div>
-            </div>
 
-        </section>
-    </main>
+<main class="villas-page">
 
-    <footer>
-        <p>&copy; 2026 TONI GOMEZ | LUXURY HOMES</p>
-    </footer>
 
-    <script src="script.js"></script>
+<!-- HEADER -->
+
+<section class="villas-header">
+
+<h1>COLECCIÓN EXCLUSIVA</h1>
+
+<p>Villas diseñadas para redefinir el concepto de hogar</p>
+
+</section>
+
+
+<!-- BUSCADOR PREMIUM -->
+
+<section class="property-search">
+
+    <h2>ENCUENTRA TU VILLA</h2>
+
+    <form>
+
+        <select>
+            <option>Ubicación</option>
+            <option>Jávea</option>
+            <option>Moraira</option>
+            <option>Benissa</option>
+        </select>
+
+        <select>
+            <option>Dormitorios</option>
+            <option>2+</option>
+            <option>3+</option>
+            <option>4+</option>
+        </select>
+
+        <select>
+            <option>Precio máximo</option>
+            <option>500.000€</option>
+            <option>750.000€</option>
+            <option>1.000.000€</option>
+            <option>2.000.000€</option>
+        </select>
+
+        <button type="submit">BUSCAR</button>
+
+    </form>
+
+</section>
+
+<!-- GRID VILLAS -->
+
+<section class="villas-grid">
+
+<!-- VILLA 1 -->
+
+<div class="villa-card">
+
+<div class="villa-image">
+<img src="imagenes/1.jpg" alt="Villa Aura">
+</div>
+
+<div class="villa-info">
+
+<h3>VILLA AURA</h3>
+
+<p>Jávea · 5 Dormitorios · 1.200 m²</p>
+
+<p class="price">3.250.000 €</p>
+
+<a href="#" class="view-more">VER PROYECTO</a>
+
+</div>
+
+</div>
+
+
+<!-- VILLA 2 -->
+
+<div class="villa-card">
+
+<div class="villa-image">
+<img src="imagenes/2.jpg" alt="Villa Zenith">
+</div>
+
+<div class="villa-info">
+
+<h3>VILLA ZENITH</h3>
+
+<p>Altea · 4 Dormitorios · 950 m²</p>
+
+<p class="price">2.950.000 €</p>
+
+<a href="#" class="view-more">VER PROYECTO</a>
+
+</div>
+
+</div>
+
+
+<!-- VILLA 3 -->
+
+<div class="villa-card">
+
+<div class="villa-image">
+<img src="imagenes/3.jpg" alt="Villa Horizon">
+</div>
+
+<div class="villa-info">
+
+<h3>VILLA HORIZON</h3>
+
+<p>Moraira · 6 Dormitorios · 1.500 m²</p>
+
+<p class="price">4.500.000 €</p>
+
+<a href="#" class="view-more">VER PROYECTO</a>
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<p>© 2026 TONI GOMEZ | LUXURY HOMES</p>
+
+</footer>
+
+
+<a href="https://wa.me/34600000000" class="whatsapp-float">
+WhatsApp
+</a>
+
+
+<script src="script.js"></script>
+
 </body>
+
 </html>
+```
